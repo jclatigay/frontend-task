@@ -10,6 +10,7 @@ Note: The live demo is hosted on Render.com, so it may take a few seconds to loa
 ## Features
 
 - Automatically fetches data 15 times from the Bored API
+- Data is cached for 1 minute to minimize API requests and maintain data availability
 - Displays fetched data in a table format
 - Download options:
   - Download as JSON file

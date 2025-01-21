@@ -2,7 +2,7 @@ require "csv"
 
 class ActivitiesController < ApplicationController
   def index
-    @activities = Rails.cache.fetch("activities", expires_in: 5.minutes) do
+    @activities = Rails.cache.fetch("activities", expires_in: 1.minute) do
       fetch_activities(15)
     end
   end
